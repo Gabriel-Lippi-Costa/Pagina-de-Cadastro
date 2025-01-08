@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,20 +13,43 @@
             <div class="cadastrase">
                 <h2>Cadastre-se</h2>
                 <h3>Bem-vindo(a)! Crie sua conta e comece a aproveitar todos os recursos do site.</h3>
-                <form action="#" method="post" autocomplete="off">
-                <label for="inome">Nome Completo:</label>
-                <input type="text" name="nome" id="inome">
-                <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail">
-                <label for="isenha">Senha:</label>
-                <input type="password" name="senha" id="isenha">
-                <label for="itel">Número de Telefone:</label>
-                <input type="tel" name="tel" id="itel">
-                <label for="idata">Data de Nascimento:</label>
-                <input type="text" name="data" id="idata">
-                <label for="iloc">Cidade e Estado:</label>
-                <input type="text" name="loc" id="iloc">
-            </div>
+                    <form action="#" method="post" autocomplete="off">
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="inome"><p>Nome Completo:</p></label>
+                        <input class="botao" type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo" >
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <label for="iemail"><p>Email:</p></label>
+                        <input class="botao" type="email" name="email" id="iemail" required autocomplete="email" placeholder="Insira seu E-mail" >
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <label for="isenha"><p>Senha:</p></label>
+                        <input class="botao" type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="Insira sua senha" >
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">call</span>
+                        <label for="itel"><p>Número de Telefone:</p></label>
+                        <input class="botao" type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="Insira seu Telefone" >
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <label for="idata"><p>Data de Nascimento:</p></label>
+                        <input class="botao" type="text" name="data" id="idata" required value="dd/mm/aaaa" >
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">location_city</span>
+                        <label for="iloc"><p>Cidade e Estado:</p></label>
+                        <input class="botao" type="text" name="loc" id="iloc" required placeholder="Insira sua Localização" >
+                    </div>
 
             </form>
         </div>
