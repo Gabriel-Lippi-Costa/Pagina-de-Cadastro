@@ -18,19 +18,19 @@
                     <div class="campo">
                         <span class="material-symbols-outlined">person</span>
                         <label for="inome"><p>Nome Completo:</p></label>
-                        <input class="botao" type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo" >
+                        <input class="botao" type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo" maxlength="50" >
                     </div>
 
                     <div class="campo">
                         <span class="material-symbols-outlined">mail</span>
                         <label for="iemail"><p>Email:</p></label>
-                        <input class="botao" type="email" name="email" id="iemail" required autocomplete="email" placeholder="Insira seu E-mail" >
+                        <input class="botao" type="email" name="email" id="iemail" required autocomplete="email" placeholder="Insira seu E-mail" maxlength="50" >
                     </div>
 
                     <div class="campo">
                         <span class="material-symbols-outlined">key</span>
                         <label for="isenha"><p>Senha:</p></label>
-                        <input class="botao" type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="Insira sua senha" >
+                        <input class="botao" type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="Insira sua senha" minlength="8">
                     </div>
 
                     <div class="campo">
@@ -50,6 +50,8 @@
                         <label for="iloc"><p>Cidade e Estado:</p></label>
                         <input class="botao" type="text" name="loc" id="iloc" required placeholder="Insira sua Localização" >
                     </div>
+                    <input type="submit" value="Enviar">
+                    <a href="#" class="esqueci">Esqueci a senha</a>
 
             </form>
         </div>
